@@ -8,7 +8,10 @@ import org.springframework.context.annotation.*;
 
 @Configuration
 @ComponentScan
+//@PropertySource("classpath:app.properties")
 public class AppConfig {
+
+}    
 
 //    @Bean
 //    public CustomBeanFactoryPostProcessor bfPost(){
@@ -25,5 +28,3 @@ public class AppConfig {
 //        System.out.println("Battery is not shakey!!!");
 //        return new Laptop();
 //    }
-}    
-

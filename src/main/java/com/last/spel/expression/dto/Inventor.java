@@ -7,6 +7,8 @@ public class Inventor {
     private String name;
     private String age;
 
+    public Inventor() {}
+
     public Inventor(String name, String age) {
         this.name = name;
         this.age = age;

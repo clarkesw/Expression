@@ -6,13 +6,11 @@ package com.last.spel.expression.dto;
 
 import java.util.Date;
 
-/**
- *
- * @author clarke
- */
 public class Attendance {
     private Date date;
     private boolean present;
+
+    public Attendance() {}
 
     public Attendance(Date date, boolean present) {
         this.date = date;

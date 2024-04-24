@@ -1,16 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.last.spel.expression.dto;
 
-/**
- *
- * @author clarke
- */
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Player {
+    @Value("Clarke")
     private String name;
+    @Value("50")
     private String age;
+
+    public Player() {}
 
     public Player(String name, String age) {
         this.name = name;
