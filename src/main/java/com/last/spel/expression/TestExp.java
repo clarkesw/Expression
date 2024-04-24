@@ -16,7 +16,7 @@ public class TestExp {
         evalContext.setBeanResolver(new BeanFactoryResolver(container));
         
         ExpressionParser parser = new SpelExpressionParser();
-        String parserPlayerName = (String)parser.parseExpression("@player.name").getValue(evalContext);
+        String parserPlayerName = (String)parser.parseExpression("@player.country").getValue(evalContext);
 
         System.out.println("Expression1 String: " + parserPlayerName);
     }

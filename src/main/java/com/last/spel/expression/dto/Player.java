@@ -9,12 +9,38 @@ public class Player {
     private String name;
     @Value("50")
     private String age;
+    @Value("#{'usa'.toUpperCase()}")
+    private String country;
+    private String state;
 
     public Player() {}
 
     public Player(String name, String age) {
         this.name = name;
         this.age = age;
+    }
+
+    public Player(String name, String age, String country, String state) {
+        this.name = name;
+        this.age = age;
+        this.country = country;
+        this.state = state;
+    }
+
+//    public String getCountry() {
+//        return country;
+//    }
+//
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
     }
 
     public String getName() {
